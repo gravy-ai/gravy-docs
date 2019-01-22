@@ -1,0 +1,5 @@
+root: ./
+
+structure:
+  events: events.md
+  item_list: item_list.md
