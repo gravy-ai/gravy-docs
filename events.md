@@ -14,7 +14,7 @@
 | `event_type` | String | The event type. One of `item_add_to_cart`, `item_purchase`, or `item_view` |
 | `items.item_id` | String | ID mapping this item to the item in Gravy |
 | `items.value` | Double | The price the user saw for this item |
-| `items.quantity` | Integer | The quantity of items in cart (default to 1 if event is an `item_view` |
+| `items.quantity` | Integer | The quantity of items in cart (default to 1 if event is an `item_view`) |
 | `vendor_id` | String | The vendor selling the items in question |
 
 
