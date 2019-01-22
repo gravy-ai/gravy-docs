@@ -1,5 +1,5 @@
 root: ./
 
 structure:
-  events: events.md
-  item_list: item_list.md
+  readme: README.md
+  summary: SUMMARY.md
