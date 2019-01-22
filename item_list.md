@@ -43,14 +43,14 @@ passed into the request or stored in the Gravy Database, with customized dynamic
 injected in.
 
 
-## GET vendors/_{vendor_id}_/item-list
+## GET vendors/**[vendor_id]**/item-list
 
 If a vendor has an item list stored in Gravy, use this method to get 
 the dynamically priced item list.
 
 ### Request
 
-    GET /api/v1/vendors/[vendor_id]/item-list
+    GET /api/v1/vendors/**[vendor_id]**/item-list
     
 #### Required Query Parameters:
 
@@ -88,14 +88,14 @@ the dynamically priced item list.
 	    data: {...}
     }
     
-## POST vendors/_{vendor_id}_/item-list
+## POST vendors/**[vendor_id]**/item-list
 
 If a vendor **does not** have an item list stored in Gravy, use this method and
 pass in the item_list as a parameter to get the dynamically priced item list.
 
 ### Request
 
-    POST /api/v1/vendors/[vendor_id]/item-list
+    POST /api/v1/vendors/**[vendor_id]**/item-list
     
 #### Required Query Parameters:
 
