@@ -50,7 +50,7 @@ the dynamically priced item list.
 
 ### Request
 
-    GET /api/v1/vendors/**[vendor_id]**/item-list
+    GET /api/v1/vendors/[vendor_id]/item-list
     
 #### Required Query Parameters:
 
@@ -95,7 +95,7 @@ pass in the item_list as a parameter to get the dynamically priced item list.
 
 ### Request
 
-    POST /api/v1/vendors/**[vendor_id]**/item-list
+    POST /api/v1/vendors/[vendor_id]/item-list
     
 #### Required Query Parameters:
 
