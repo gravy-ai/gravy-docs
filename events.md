@@ -23,7 +23,7 @@
 | Parameter | Type | Description |
 |:---|:---|---|
 | `user_id` | String | ID relating to the user on the client |
-| `test_id` | String | This is passed from the Pricing API in the `meta` object. Used to identify a user session. |
+| `test_id` | String | A UUID hex passed from the Pricing API in the `meta` object. Used to identify a user session. |
 
 #### Structure
 

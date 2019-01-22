@@ -9,7 +9,7 @@ storage system.
 The API then responds with item lists that are identical the Client's **Item List** data structure 
 in order to reduce the complexity of an integration.
 
-As an example, if a Client's **Item List** structrue looks as follows:
+As an example, if a Client's **Item List** structure looks as follows:
     
     # Example item_list request
     {
@@ -76,7 +76,7 @@ the dynamically priced item list.
 | Parameter | Description |
 | --- | --- |
 | `meta` | Container for response metadata |
-| `meta.test_id` | The Test ID is unique to each response the API generates. It is to be returned with the subsequent data events so we can tie those events to a specific session |
+| `meta.test_id` | A UUID hex that is unique to each response the API generates. It is to be returned with the subsequent data events so we can tie those events to a specific session |
 | `data` | A stringified JSON blob of the consumer's item list, where the prices have been adjusted based on the any tests running on that client |
 
 #### Example Response:
@@ -127,7 +127,7 @@ pass in the item_list as a parameter to get the dynamically priced item list.
 | Parameter | Description |
 | --- | --- |
 | `meta` | Container for response metadata |
-| `meta.test_id` | The Test ID is unique to each response the API generates. It is to be returned with the subsequent data events so we can tie those events to a specific session |
+| `meta.test_id` | A UUID hex that is unique to each response the API generates. It is to be returned with the subsequent data events so we can tie those events to a specific session |
 | `data` | A stringified JSON blob of the consumer's item list, where the prices have been adjusted based on the any tests running on that client |
 
 #### Example Response:
