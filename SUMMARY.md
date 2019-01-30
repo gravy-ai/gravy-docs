@@ -2,5 +2,6 @@
 
 * [Home](README.md)
 * [Events API](events.md)
-* [Pricing API](item_list.md)
+* [Pricing API](prices.md)
+* [Menu Import API](item_lists.md)
 
