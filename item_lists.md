@@ -1,5 +1,33 @@
 # Gravy Menu Import API
 
+## Introduction
+
+The Gravy backend stores **Schemas** that map Client **Item List** structures to Gravy's internal item
+storage system.
+
+Once a **Schema** is configured for a Client, then the Client can consume this API with the JSON structure
+from their own system.
+
+As an example, if a Client's **Item List** structure looks as follows:
+    
+    # Example item_list structure
+    {
+        "items": [
+            {
+                "InternalID": "163412",
+                "name": "Popular Item",
+                "price": 9.55 
+            },
+            {...}
+        ], 
+    } 
+
+The Gravy Menu Import API would consume this item_list and convert it into Gravy's storage system using the **Schema** associated with the client.
+
+The response returns an exact instance of the **Item List** that is either 
+passed into the request or stored in the Gravy Database, with customized dynamic prices
+injected in.
+
 ## POST /item_lists
 
 ### Request
